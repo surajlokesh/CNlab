@@ -28,10 +28,13 @@ mp[id]=curr_str;
 vec.push_back(id);
 id+=1;
 }
+string ss;
 random_shuffle(vec.begin(),vec.end());
+for(auto i:vec)
+cout<<mp[i]<<" ";
 sort(vec.begin(),vec.end());
 string st="";
 for(auto i:vec)
 st+=mp[i];
-cout<<"final string:"<<st<<endl;
+cout<<"\nfinal string:"<<st<<endl;
 }
